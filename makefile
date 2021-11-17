@@ -1,4 +1,4 @@
-CFLAGS=-Wall -W -std=c99 -ansi -pedantic -c
+CFLAGS=-Wall -W -std=c11 -ansi -pedantic -c
 
 all: main
 

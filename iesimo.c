@@ -67,7 +67,7 @@ int Selecao2(int *array, int i, int inicio, int fim)
 int selecao1(int *array, int i, int tamanho)
 {
   mergesort2(array, tamanho);
-  return array[i];
+  return array[i - 1];
 }
 
 /*
@@ -131,3 +131,9 @@ void merge(int *v, int *c, int i, int m, int f)
   while (ic <= f)
     v[z++] = c[ic++];
 }
+
+int* cria_vetor(int size){
+  int* vetor = malloc(size * sizeof(int));
+  return vetor;
+}
+
